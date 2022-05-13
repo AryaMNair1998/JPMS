@@ -25,8 +25,18 @@ if(rs.next())
 	response.sendRedirect("dashboard.html");
 }
 else
-{
-	response.sendRedirect("error.html");
+{%>
+<script type="text/javascript">
+      alert("Please enter correct username and password");
+  </script>
+  <htmL>
+  <body style="text-align:center; ">
+  <a href="Login.html">Login...</a>
+  </body>
+  </htmL>
+  
+<%
+	
 }
 
 }
